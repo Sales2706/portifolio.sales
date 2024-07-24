@@ -1,0 +1,21 @@
+.Presentation{
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.Presentation h1{ 
+    font-size: 39px;
+}
+
+.Presentation p{
+    font-size: 18px;
+    color: #BCBCBC;
+    margin-left: 65px;
+    margin-top: 35px;
+}
+
+.Presentation Button{
+    margin-top: 35px;
+    margin-left: 95px;
+
+}

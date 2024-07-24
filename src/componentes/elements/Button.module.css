@@ -1,0 +1,13 @@
+.Button button{
+    width: 180px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 25px;
+    border: none;
+    color: #ffffff;
+    background: linear-gradient(45deg, #13adc7 33%, #6978d1 66%, #945dd6 100%);
+}
+
+.Button button:hover{
+    cursor: pointer;
+}

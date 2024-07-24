@@ -1,0 +1,46 @@
+.Card{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.Card section{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid aliceblue;
+    border-radius: 35px 0px 35px 0px;
+    text-align: center;
+}
+
+.Card img{
+    width: 300px;
+    margin: 15px 15px 0px 15px ;
+
+}
+
+.Card section{
+    width: 350px;
+}
+
+.Card section:hover{
+    cursor: pointer;
+    box-shadow: 0px 5px 5px  #ffffff85;
+    transition-duration: 0,7s;
+}
+
+.Card h3{
+    font-size: 23px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.Card p{
+   margin-left: 20px;
+   margin-right: 20px;
+   text-align: left;
+}
+
+.Card Button{
+    margin-left: -115px;
+    margin-bottom: 20px;
+}

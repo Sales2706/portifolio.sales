@@ -1,0 +1,14 @@
+.Projects{
+    margin-top: 95px;
+}
+
+.Projects h1{
+    margin-left: 150px;
+    font-size: 39px;
+}
+
+.Projects section{
+    display:grid;
+    grid-auto-flow: column;
+    margin: 0px 100px 0px 100px;
+}
