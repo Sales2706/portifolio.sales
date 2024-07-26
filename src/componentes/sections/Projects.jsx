@@ -1,6 +1,7 @@
 import Style from './Projects.module.css';
 import Cards from '../elements/Cards.jsx'
 import Projeto from '../images/projeto.svg'
+import Projetos from '../images/projetos.svg'
 
 function Projects(){
     return(
@@ -15,7 +16,7 @@ function Projects(){
                     site=''
                 />
                 <Cards
-                    img={Projeto}
+                    img={Projetos}
                     title='Projeto 2'
                     description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
                     repo=''
