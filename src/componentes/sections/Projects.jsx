@@ -13,15 +13,15 @@ function Projects(){
                     img={Arquitetura}
                     title='Projeto 1'
                     description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-                    repo=''
-                    site=''
+                    repo='https://github.com/Sales2706/projeto-landing-page-arquitetura'
+                    site='https://projeto-landing-page-arquitetura-base.netlify.app/'
                 />
                 <Cards
                     img={Projetos}
                     title='Projeto 2'
                     description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-                    repo=''
-                    site=''
+                    repo='https://github.com/Sales2706/DncWeather'
+                    site='https://dnc-weather.netlify.app/'
                     
                 />
             </section>
