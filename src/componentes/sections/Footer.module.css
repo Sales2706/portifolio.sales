@@ -1,26 +1,9 @@
 .Footer{
     display: flex;
-    justify-content: space-around; 
-    margin-top: 100px;
-    margin-bottom: 50px;
-    margin-left: 100px;
-
+    justify-content: center; 
 }
 
-.Footer h6{
-    font-size: 23px;
-}
-
-.Footer ul{
-    list-style: none;
-    display: flex;
-    margin-top: 60px;
-}
-
-.Footer li{
-    margin-left: 20px;
-}
-
-.Footer a{
-    color: aliceblue !important;
+.Footer p{
+    font-size: 15px;
+    margin: 50px;
 }

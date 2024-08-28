@@ -1,31 +1,22 @@
 .Card{
-    display: flex;
+    display: grid;
     justify-content: center;
-    margin: 50px;
 }
 
 .Card section{
     display: flex;
     flex-direction: column;
     border: 1px solid aliceblue;
-    border-radius: 35px 0px 35px 0px;
+    border-radius: 15px;
     text-align: center;
+    width: 350px;
+    margin-left: 17px;
 }
 
 .Card img{
-    width: 300px;
-    margin: 15px 15px 0px 15px ;
-
-}
-
-.Card section{
     width: 350px;
-}
-
-.Card section:hover{
+    margin: 15px 15px 0px 15px ;
     cursor: pointer;
-    box-shadow: 0px 5px 5px  #ffffff85;
-    transition-duration: 0,7s;
 }
 
 .Card h3{

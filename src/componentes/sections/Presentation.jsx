@@ -2,41 +2,43 @@ import styles from './Presentation.module.css'
 import Button from '../elements/Button'
 import { useEffect, useState } from 'react'
 
-function Presentation(){
+function Presentation() {
     const [text, setText] = useState('');
-    const toRotate = ['Sales Adriano', 'Desenvolvedor Full Stack'];
+    const toRotate = ['Sales Adriano!', 'Desenvolvedor Full Stack'];
     const [loop, setLoop] = useState(0);
-    const [isDeleting, setDeleting] = useState(false);
+    const [isDeleting, setIsDeleting] = useState(false);
     const period = 100;
-    const [delta, setDelta] = useState(100)
+    const [delta, setDelta] = useState(100);
 
-    useEffect(()=>{
-        let ticker = setInterval(()=>{
-            toType()
-        }, delta)
-        return()=> {clearInterval(ticker)}
-    }, [text])
+    useEffect(() => {
+        let ticker = setInterval(() => {
+            toType();
+        }, delta);
 
-    const toType = ()=>{
+        return () => clearInterval(ticker);
+    }, [text, delta]); // Adiciona 'delta' às dependências para atualizar corretamente
+
+    const toType = () => {
         let i = loop % toRotate.length;
-        let fulltext = toRotate[i]
-        let udateText = isDeleting ? fulltext.substring(0,text.length-1) : fulltext.substring(0,text.length+1)
+        let fullText = toRotate[i];
+        let updateText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
 
-        setText(udateText);
+        setText(updateText);
 
-        if(!isDeleting && udateText === fulltext){
+        if (!isDeleting && updateText === fullText) {
             setIsDeleting(true);
             setDelta(period);
-        }else if (isDeleting && udateText === ''){
-            setDeleting(false);
+        } else if (isDeleting && updateText === '') {
+            setIsDeleting(false);
             setDelta(period);
-            setLoop(loop+1);
+            setLoop(loop + 1);
         }
-    }
+    };
+
 
     return(
         <div className={styles.Presentation}>
-            <h1>Olá, sou {text} </h1>
+            <h1>Olá, eu sou {text} </h1>
             <p>
             Olá! Sou um estudante entusiasta e dedicado em desenvolvimento web full stack, apaixonado <br/>
             por desafios e pela busca incessante por soluções inovadoras. Ao longo da minha jornada, <br/>
